@@ -13,19 +13,18 @@
     <!-- Define your beans here -->
 
            
-   <!-- Step 1 configuration bean --> 
+   <!-- Step 1 configuration bean -->    
    
    <!-- Define the dependency -->
     <bean id="myFortuneService"
-   class="com.springDemo.HappyFortuneService">
+   class="com.springDemo.randomFortuneService">
     </bean>
       
    
     <bean id="myCoach"
     class="com.springDemo.TrackCoach">
     
-    <!-- Set up the constructor injection -->
-    
+    <!-- Set up the constructor injection -->    
     <constructor-arg ref="myFortuneService"/>
     </bean>
 
@@ -40,9 +39,6 @@
    <property name="team" value="${foo.team}"/>
    
    </bean>
-
-
-
     
     
     
