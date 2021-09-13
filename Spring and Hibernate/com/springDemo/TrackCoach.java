@@ -27,5 +27,19 @@ public class TrackCoach implements Coach {
 		return	"Just do it: " + fortuneService.getFortune();
 			
 	}
+	
+	
+	// LifeCycle of beans - add init method / hook
+	public void initMethod() {
+		System.out.println("TrackCoach: Method for init.");
+	}
+	
+	
+	// LifeCycle of beans - add destroy method	/ hook
+	public void destroyMethod() {
+		System.out.println("TrackCoach: Method for destroy.");
+	}
+	
+	
 
 }
