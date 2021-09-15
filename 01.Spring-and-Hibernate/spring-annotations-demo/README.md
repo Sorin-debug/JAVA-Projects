@@ -21,12 +21,10 @@ Spring will look for a class that matches the property (class or interface).
 2. Create a constructor in the class for injections
 3. Configure the dependency injection with @Autowired Annotation.
 
-
 #### B. Development Process - Setter methods(s) Injection
 1. Create the setter method(s) in class for injections
 2. Configure the dependency injection with @Autowired Annotation.
-** Any method Injection
-1. Any method with @Autowired
+
 
 #### C. Development Process - Field Injection
 1. Configure the dependency injection with Autowired Annotation
