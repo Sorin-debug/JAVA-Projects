@@ -1,8 +1,8 @@
 # Spring Demo One 
 
-#### Inversion of Control (IoC)
+## Inversion of Control (IoC)
 
-## Outsource to an object factory
+### Outsource to an object factory
 - The approach of outsourcing the construction and management of objects.
 
 ## Spring Container
