@@ -25,9 +25,9 @@
 2. Create a Spring Container
 	- Spring container is known as **ApplicationContext**
 		- Specialized implementations: 
-		-> ClassPathXmlApplicationContext.
-		-> AnnotationConfigApplicationContext.
-		-> GenericWebApplicationContext.
+			- ClassPathXmlApplicationContext.
+			- AnnotationConfigApplicationContext.
+			- GenericWebApplicationContext.
 
 3. Retrieve Beans from Spring Container
 	- retrieve bean.
