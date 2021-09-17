@@ -33,8 +33,8 @@
 	- retrieve bean.
 
 ## Injection Types
-A. Constructor Injection
-B. Setter injection
+- Constructor Injection
+- Setter injection
 
 
 #### A. Development Process - Constructor Injection
