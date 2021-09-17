@@ -27,6 +27,19 @@ Spring will look for a class that matches the property (class or interface).
 
 
 #### C. Development Process - Field Injection
-1. Configure the dependency injection with Autowired Annotation
+ Configure the dependency injection with Autowired Annotation
  - Applied directly to the field
  - No need for setter methods
+
+
+
+## Annotation Autowiring and Qualifiers
+
+#### @Qualifier - Can apply to:
+1. Constructor injection.
+2. Setter injection methods.
+3. Field injection.
+
+**Used for specific in multiple implementations.**
+Example: @Qualifier("randomFortuneService")
+

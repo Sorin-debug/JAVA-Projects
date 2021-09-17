@@ -18,6 +18,8 @@ public class AnnotationDemoApp {
 		
 		// call the method to get the daily fortune
 		System.out.println(theCoach.getDailyFortune());
+		
+	
 				
 		// close the context
 		context.close();
