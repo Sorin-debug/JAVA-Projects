@@ -32,3 +32,19 @@
 3. Retrieve Beans from Spring Container
 	- retrieve bean.
 
+## Injection Types
+A. Constructor Injection
+B. Setter injection
+
+
+#### A. Development Process - Constructor Injection
+1. Define the dependency interface and class.
+2. Create a constructor in the class for injections.
+3. Configure the dependency injection in the Spring file.
+
+#### B. Development Process - Setter Injection
+1. Create setter method(s) in the class for injections.
+2. Configure the dependency injection Spring file.
+
+
+
