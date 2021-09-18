@@ -43,3 +43,23 @@ Spring will look for a class that matches the property (class or interface).
 **Used for specific in multiple implementations.**
 Example: @Qualifier("randomFortuneService")
 
+
+## Bean Scope - Added AnnotationBeanScopeDemoApp.java
+
+- Creating theCoach and alphaCoach, testing for memory location.
+	* default type is Singleton.
+- Adding @Scope("prototype") in tennisCoach
+	* each object will have own memory location.
+	* prototype create a new instance every time.
+
+
+
+
+
+
+
+
+
+
+
+
