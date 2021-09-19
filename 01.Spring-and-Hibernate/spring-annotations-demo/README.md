@@ -31,8 +31,6 @@ Spring will look for a class that matches the property (class or interface).
  - Applied directly to the field
  - No need for setter methods
 
-
-
 ## Annotation Autowiring and Qualifiers
 
 #### @Qualifier - Can apply to:
@@ -43,7 +41,6 @@ Spring will look for a class that matches the property (class or interface).
 **Used for specific in multiple implementations.**
 Example: @Qualifier("randomFortuneService")
 
-
 ## Bean Scope - Added AnnotationBeanScopeDemoApp.java
 
 - Creating theCoach and alphaCoach, testing for memory location.
@@ -52,12 +49,11 @@ Example: @Qualifier("randomFortuneService")
 	* each object will have own memory location.
 	* prototype create a new instance every time.
 
+## @PostConstruct and @PreDestroy Method Signatures
 
-
-
-
-
-
+#### Development Process 
+1. Define methods for init and destroy.
+2. Add annotations: @PostConstruct and @PreDestroy.
 
 
 

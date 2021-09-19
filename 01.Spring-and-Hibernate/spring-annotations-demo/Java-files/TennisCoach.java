@@ -1,7 +1,13 @@
 package com.springDemo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+
+//@Scope("prototype")
 
 @Component
 public class TennisCoach implements Coach {
@@ -13,6 +19,21 @@ public class TennisCoach implements Coach {
 	
 	//define a default constructor
 	public TennisCoach() {System.out.println(">> Inside the default constructor.");}
+	
+		
+	// Define my init method
+	@PostConstruct
+	public void doMyStartupStusff() {
+		System.out.println(">>TennishCoach: inside of my doMyStartupStusff");
+	}
+	
+	// define my destroy method
+	@PreDestroy
+	public void doMyCleanupStuff() {
+		System.out.println(">>TennishCoach: inside of my doMyCleanupStuff");
+	}
+	
+	
 	
 	
 	// Using @Qualifier with a constructor
