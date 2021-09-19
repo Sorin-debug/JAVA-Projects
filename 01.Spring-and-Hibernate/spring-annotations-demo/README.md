@@ -56,6 +56,25 @@ Example: @Qualifier("randomFortuneService")
 2. Add annotations: @PostConstruct and @PreDestroy.
 
 
+## Spring Configuration with Java Code (no xml)
+
+#### Development Process
+1.	Create a Java class and annotate as **@Configuration**
+2.	Add component scanning support : **@ComponentScan** (optional)
+3.	Read Spring Java configuration class.
+4.	Retrieve bean from Spring Container
+
+
+## Defining Beans in spring with Java code
+
+#### Development Process
+1. Define method to expose bean.
+2. Inject bean dependencies.
+3. Read Spring Java configuration class.
+4. Retrieve bean from Spring container.
+
+
+
 
 
 
