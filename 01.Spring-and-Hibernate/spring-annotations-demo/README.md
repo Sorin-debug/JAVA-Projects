@@ -73,7 +73,13 @@ Example: @Qualifier("randomFortuneService")
 3. Read Spring Java configuration class.
 4. Retrieve bean from Spring container.
 
+## Injecting Values from Properties File 
+ - @PropertySource("Classpath:sport.properties")
 
+#### Development Process
+1. Create Properties File.
+2. Load Properties file in Spring config.
+3. Reference values from Properties File.
 
 
 
