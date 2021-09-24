@@ -38,6 +38,15 @@ Country option from a list:
 
 </form:select>
 
+<br><br>
+
+Favorite Language:
+Java <form:radiobutton path="favoriteLanguage" value="Java"/>
+C# <form:radiobutton path="favoriteLanguage" value="C#"/>
+C++ <form:radiobutton path="favoriteLanguage" value="C++"/>
+Python <form:radiobutton path="favoriteLanguage" value="Python"/>
+
+
 
 
 <br><br>

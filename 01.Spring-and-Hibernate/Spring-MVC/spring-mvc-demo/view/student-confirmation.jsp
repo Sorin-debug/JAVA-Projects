@@ -20,6 +20,10 @@ Country: ${student.country}  <!-- Spring will call student.GetCountry() -->
 Country Hash: ${student.countryHash}  <!-- Spring will call getCountryOptions()  --> 
 
 
+<br><br>
+
+Favorite Language: ${student.favoriteLanguage }
+
 </body>
 
 </html>

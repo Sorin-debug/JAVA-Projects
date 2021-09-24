@@ -44,6 +44,15 @@
 **Development Process**
 1.	Update HTML form student-form.jsp
 2.	Update Student class – add getter/setter for new property
-3.	Update confirmation page student-controller.jsp
+3.	Update confirmation page student-confirmation.jsp
+
+#### Spring MVC – Radio Button
+**Development Process**
+Step 1. Update HTML Form student-form.jsp
+Step 2. Add property to Student class - add getter/setter
+Step 3. Update the confirmation page student-confirmation.jsp
+
+
+
 
 
