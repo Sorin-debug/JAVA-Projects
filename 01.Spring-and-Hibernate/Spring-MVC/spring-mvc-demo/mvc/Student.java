@@ -13,6 +13,9 @@ public class Student {
 	
 	
 	private LinkedHashMap <String, String> countryOptions;
+	
+	// for radio button
+    private LinkedHashMap<String, String> favoriteLanguageOptions;
 
 	private String favoriteLanguage;
 	
@@ -26,6 +29,16 @@ public class Student {
 		countryOptions.put("DE", "Germany");
 		countryOptions.put("EN", "England");
 		countryOptions.put("SP", "Spain");
+		
+		
+		// populate favorite language options
+        favoriteLanguageOptions = new LinkedHashMap<>();
+        // parameter order: value, display label
+        //
+        favoriteLanguageOptions.put("Java", "Java");
+        favoriteLanguageOptions.put("C#", "C#");
+        favoriteLanguageOptions.put("PHP", "PHP");
+        favoriteLanguageOptions.put("Ruby", "Ruby");   
 		
 	}
 	
@@ -77,7 +90,10 @@ public class Student {
 	}
 	
 	
-	
+	// getter method for radio button
+	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
+        return favoriteLanguageOptions;
+    }
 	
 	
 	

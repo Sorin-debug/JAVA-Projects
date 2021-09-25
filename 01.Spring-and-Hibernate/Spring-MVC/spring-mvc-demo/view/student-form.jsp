@@ -47,10 +47,14 @@ C++ <form:radiobutton path="favoriteLanguage" value="C++"/>
 Python <form:radiobutton path="favoriteLanguage" value="Python"/>
 
 
+<br><br>
+
+Favorite language from LinkedHashMap:
+<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}"  />
+
 
 
 <br><br>
-
 <input type="submit" value="Submit" />
 
 
