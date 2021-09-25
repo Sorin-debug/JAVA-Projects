@@ -19,6 +19,10 @@ public class Student {
 
 	private String favoriteLanguage;
 	
+	// for operating systems, we need an array of strings
+	private String[] operatingSystems;
+	
+	
 	public Student() {
 		
 		// populate country options: used ISO country code
@@ -94,6 +98,17 @@ public class Student {
 	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
         return favoriteLanguageOptions;
     }
+	
+	
+// getter and setters for array of operating systems
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+	
 	
 	
 	

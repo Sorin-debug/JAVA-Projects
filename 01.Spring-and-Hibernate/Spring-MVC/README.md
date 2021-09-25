@@ -1,7 +1,8 @@
 # Spring MVC - Model View Controller
 
 
-1. Spring MVC - Creating Controllers and Views
-2. Spring MVC - Request Params and Request Mappings
-3. Spring MVC - Form Tags and Data Binding
-4. Spring MVC - Radio button
+1. Creating Controllers and Views
+2. Request Params and Request Mappings
+3. Form Tags and Data Binding
+4. Radio button
+5. CheckBox

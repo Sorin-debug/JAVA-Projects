@@ -52,6 +52,11 @@ Step 1. Update HTML Form student-form.jsp
 Step 2. Add property to Student class - add getter/setter
 Step 3. Update the confirmation page student-confirmation.jsp
 
+#### Spring MVC – CheckBox
+**Development Process**
+Step 1. Update HTML Form student-form.jsp
+Step 2. Add property to Student class - add getter/setter
+Step 3. Update the confirmation page student-confirmation.jsp
 
 
 

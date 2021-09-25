@@ -55,6 +55,14 @@ Favorite language from LinkedHashMap:
 
 
 <br><br>
+
+Operating Systems:
+Linux: <form:checkbox path="operatingSystems" value="Linux"/>
+Mac: <form:checkbox path="operatingSystems" value="Mac"/>
+Windows: <form:checkbox path="operatingSystems" value="Windows"/>
+
+
+<br><br>
 <input type="submit" value="Submit" />
 
 
