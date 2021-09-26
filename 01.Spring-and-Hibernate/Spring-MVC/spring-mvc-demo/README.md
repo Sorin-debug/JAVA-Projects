@@ -48,15 +48,23 @@
 
 #### Spring MVC – Radio Button
 **Development Process**
-Step 1. Update HTML Form student-form.jsp
-Step 2. Add property to Student class - add getter/setter
-Step 3. Update the confirmation page student-confirmation.jsp
+1. 	Update HTML Form student-form.jsp
+2.	Add property to Student class - add getter/setter
+3.	Update the confirmation page student-confirmation.jsp
 
 #### Spring MVC – CheckBox
 **Development Process**
-Step 1. Update HTML Form student-form.jsp
-Step 2. Add property to Student class - add getter/setter
-Step 3. Update the confirmation page student-confirmation.jsp
+1.	Update HTML Form student-form.jsp
+2.	Add property to Student class - add getter/setter
+3.	Update the confirmation page student-confirmation.jsp
+
+#### Spring MVC – Form Validation
+**Development Process**
+
+1.	Add validation rule to Customer class
+2.	Display error messages on HTML form
+3.	Perform validation in the Controller class
+4.	Update confirmation page
 
 
 
