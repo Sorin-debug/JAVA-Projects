@@ -15,10 +15,11 @@ public class Customer {
 	@Size(min=1, message="Is required")
 	private String lastName;
 	
-	// add validation rules	
+	// adding validation rules	
+	@NotNull(message="Is required")
 	@Min(value=0, message="must be greater than 0")
 	@Max(value=10, message="must be lower than 10")
-	private int freePasses;
+	private Integer freePasses;
 	
 	
 	// Postal code - Regular Expressions	
@@ -46,11 +47,11 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
-	public int getFreePasses() {
+	public Integer getFreePasses() {
 		return freePasses;
 	}
 
-	public void setFreePasses(int freePasses) {
+	public void setFreePasses(Integer freePasses) {
 		this.freePasses = freePasses;
 	}
 
