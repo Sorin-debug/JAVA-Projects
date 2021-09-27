@@ -21,8 +21,23 @@
 <br><br>
 
 <p class="form">E-mail address:</p> <form:input path="emailAddress" />
-
 <br><br>
+
+<p class="form">Choose It Field from list</p> 
+<form:select path="itOptionField">
+<form:options items="${register.itOption}" />
+</form:select>
+<br><br>
+
+<p class="form">Select your level</p> 
+<form:select path="jobLevel">
+<form:option value="Junior" label="Junior"/>
+<form:option value="Mid" label="Mid"/>
+<form:option value="Senior" label="Senior"/>
+<form:option value="Executive" label="Executive"/>
+</form:select>
+<br><br>
+
 <input type="submit" value="Submit" />
 </form:form>
 
