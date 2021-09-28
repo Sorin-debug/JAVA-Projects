@@ -20,11 +20,13 @@ Last Name: ${register.lastName }
 <br>
 Email Address: ${register.emailAddress }
 <br>
+Phone number: ${register.phoneNumber }
+<br>
 IT Field: ${register.itOptionField }
 <br>
 Job Level: ${register.jobLevel }
 <br>
-
+Time percentage of travel: ${register.timeTravel }
 
 <br><br>
 <h5>Jobs Finder @2021</h5>

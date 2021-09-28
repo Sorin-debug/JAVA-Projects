@@ -12,18 +12,23 @@
 <body background="${pageContext.request.contextPath}/resources/images/Tech.jpg">
 
 <h1>Jobs Finder - Formular register</h1>
+
+<p class="formTitle">Entry Data</p>
+<i>Fill out the form. Asterisk(*) means required field.</i>
 <form:form action="processForm" modelAttribute="register">
 
 <p class="form">First name:</p><form:input path="firstName" />
 <br><br>
 
-<p class="form">Last name:</p> <form:input path="lastName" />
+<p class="form">Last name: </p><form:input path="lastName" />
 <br><br>
 
-<p class="form">E-mail address:</p> <form:input path="emailAddress" />
+<p class="form">(*) E-mail address:</p><form:input path="emailAddress" />
+<br><br>
+<p class="form">(*) Phone number:</p> <form:input path="phoneNumber" />
 <br><br>
 
-<p class="form">Choose It Field from list</p> 
+<p class="form">Choose It Field from list </p> 
 <form:select path="itOptionField">
 <form:options items="${register.itOption}" />
 </form:select>
@@ -36,8 +41,19 @@
 <form:option value="Senior" label="Senior"/>
 <form:option value="Executive" label="Executive"/>
 </form:select>
-<br><br>
 
+<br><br>
+<p class="form">Willingness to travel:</p>
+
+<p class="form">
+10% <form:radiobutton path="timeTravel" value="10%"/>
+30% <form:radiobutton path="timeTravel" value="30%"/>
+50% <form:radiobutton path="timeTravel" value="50"/>
+I can't <form:radiobutton path="timeTravel" value="Not possible!"/>
+</p>
+
+
+<br><br>
 <input type="submit" value="Submit" />
 </form:form>
 

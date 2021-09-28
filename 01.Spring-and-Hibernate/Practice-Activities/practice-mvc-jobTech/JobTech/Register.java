@@ -8,6 +8,8 @@ public class Register {
 	private String firstName;
 	private String lastName;
 	private String emailAddress;
+	private Integer phoneNumber;
+	
 	
 	private String itOptionField;
 	private LinkedHashMap <String, String> itOption;
@@ -22,6 +24,8 @@ public class Register {
 		itOption.put("HW", "Hardware");
 				
 	}
+	
+	private String timeTravel;
 	
 	
 	
@@ -42,9 +46,22 @@ public class Register {
 	public String getEmailAddress() {
 		return emailAddress;
 	}
+	
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+
+
+	public Integer getPhoneNumber() {
+		return phoneNumber;
+	}
+
+
+
+	public void setPhoneNumber(int phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
 
 
 	public String getItOptionField() {
@@ -77,6 +94,15 @@ public class Register {
 
 	public void setJobLevel(String jobLevel) {
 		this.jobLevel = jobLevel;
+	}
+	public String getTimeTravel() {
+		return timeTravel;
+	}
+	public void setTimeTravel(String timeTravel) {
+		this.timeTravel = timeTravel;
+	}
+	public void setPhoneNumber(Integer phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	
 	

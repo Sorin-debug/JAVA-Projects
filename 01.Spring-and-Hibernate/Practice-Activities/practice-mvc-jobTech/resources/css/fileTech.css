@@ -48,7 +48,12 @@ td {
 	vertical-align:top;
 }
 
-
+i{
+	font-family: verdana;
+  	color: red;
+    text-align: left;
+    font-size: 12px;
+}
 p{
 	font-family: verdana;
   	color: white;
@@ -62,6 +67,12 @@ p.form{
     font-size: 12px;
 }
 
+p.formTitle{
+	font-family: verdana;
+	color: white;
+    text-align: left;
+    font-size: 14px;
+}
 p.blacky{
 	font-family: verdana;
   	color: #0000ff;
