@@ -19,7 +19,7 @@ public class Register {
 	private String emailAddress;
 	
 	
-	@NotNull(message="Is required")
+	// adding validation for only digits
 	@Pattern(regexp="\\d+", message="Only Numbers, please!")
 	private String phoneNumber;
 	
