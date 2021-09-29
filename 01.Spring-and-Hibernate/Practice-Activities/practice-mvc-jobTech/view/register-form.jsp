@@ -8,7 +8,6 @@
 <title>Joob Seeker Registration Form</title>
 </head>
 
-
 <body background="${pageContext.request.contextPath}/resources/images/Tech.jpg">
 
 <h1>Jobs Finder - Formular register</h1>
@@ -18,21 +17,23 @@
 <form:form action="processForm" modelAttribute="register">
 
 <p class="form">First name:</p><form:input path="firstName" />
-<br><br>
+<br>
 
 <p class="form">Last name: </p><form:input path="lastName" />
-<br><br>
+<br>
 
 <p class="form">(*) E-mail address:</p><form:input path="emailAddress" />
-<br><br>
+<i><form:errors path="emailAddress" cssClass="error"/></i>
+<br>
 <p class="form">(*) Phone number:</p> <form:input path="phoneNumber" />
-<br><br>
+<i><form:errors path="phoneNumber" cssClass="error"/></i>
+<br>
 
 <p class="form">Choose It Field from list </p> 
 <form:select path="itOptionField">
 <form:options items="${register.itOption}" />
 </form:select>
-<br><br>
+<br>
 
 <p class="form">Select your level</p> 
 <form:select path="jobLevel">
@@ -42,7 +43,7 @@
 <form:option value="Executive" label="Executive"/>
 </form:select>
 
-<br><br>
+<br>
 <p class="form">Willingness to travel:</p>
 
 <p class="form">
@@ -50,6 +51,16 @@
 30% <form:radiobutton path="timeTravel" value="30%"/>
 50% <form:radiobutton path="timeTravel" value="50"/>
 I can't <form:radiobutton path="timeTravel" value="Not possible!"/>
+</p>
+
+<p class="form">Mark used language:</p> 
+
+<p class="form">
+Java <form:checkbox path="programmingLanguage" value="Java"/>
+C++ <form:checkbox path="programmingLanguage" value="C++"/>
+C# <form:checkbox path="programmingLanguage" value="C#"/>
+Other <form:checkbox path="programmingLanguage" value="Other"/>
+None <form:checkbox path="programmingLanguage" value="None "/>
 </p>
 
 
@@ -62,7 +73,7 @@ I can't <form:radiobutton path="timeTravel" value="Not possible!"/>
 <br><br>
 
 <a href="/practice-mvc-jobTech">Go Back</a>
-<br><br>
+<br>
 <h5>Jobs Finder @2021</h5>
 </body>
 </html>

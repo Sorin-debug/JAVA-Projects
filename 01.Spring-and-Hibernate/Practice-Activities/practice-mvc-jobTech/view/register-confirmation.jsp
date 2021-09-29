@@ -27,7 +27,15 @@ IT Field: ${register.itOptionField }
 Job Level: ${register.jobLevel }
 <br>
 Time percentage of travel: ${register.timeTravel }
+<br>
 
+<!--  we create a  bullet list -->
+#Programming:
+<ul>
+<c:forEach var="temp" items="${register.programmingLanguage }">
+<li> ${temp} </li>
+</c:forEach>
+</ul>
 <br><br>
 <h5>Jobs Finder @2021</h5>
 

@@ -2,13 +2,26 @@ package com.JobTech;
 
 import java.util.LinkedHashMap;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class Register {
 
 	
 	private String firstName;
 	private String lastName;
+	
+	
+	// adding validation rules	
+	@NotNull
+	@Size(min=1, message="Is required")
 	private String emailAddress;
-	private Integer phoneNumber;
+	
+	
+	@NotNull(message="Is required")
+	@Pattern(regexp="\\d+", message="Only Numbers, please!")
+	private String phoneNumber;
 	
 	
 	private String itOptionField;
@@ -25,10 +38,10 @@ public class Register {
 				
 	}
 	
+	private String[] programmingLanguage;
+	
 	private String timeTravel;
-	
-	
-	
+			
 	// create the getter/setter
 	
 	public String getFirstName() {
@@ -51,30 +64,21 @@ public class Register {
 		this.emailAddress = emailAddress;
 	}
 
-
-	public Integer getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 
-
-
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
-
 
 	public String getItOptionField() {
 		return itOptionField;
 	}
 
-
-
 	public void setItOptionField(String itOptionField) {
 		this.itOptionField = itOptionField;
 	}
-
-
 
 	public LinkedHashMap<String, String> getItOption() {
 		return itOption;
@@ -84,13 +88,9 @@ public class Register {
 		this.itOption = itOption;
 	}
 
-
-
 	public String getJobLevel() {
 		return jobLevel;
 	}
-
-
 
 	public void setJobLevel(String jobLevel) {
 		this.jobLevel = jobLevel;
@@ -101,10 +101,14 @@ public class Register {
 	public void setTimeTravel(String timeTravel) {
 		this.timeTravel = timeTravel;
 	}
-	public void setPhoneNumber(Integer phoneNumber) {
-		this.phoneNumber = phoneNumber;
+
+	public String[] getProgrammingLanguage() {
+		return programmingLanguage;
 	}
-	
+	public void setProgrammingLanguage(String[] programmingLanguage) {
+		this.programmingLanguage = programmingLanguage;
+	}
+
 	
 	
 	
