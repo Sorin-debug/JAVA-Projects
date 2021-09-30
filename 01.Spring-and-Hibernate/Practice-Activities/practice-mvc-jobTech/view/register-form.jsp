@@ -64,6 +64,10 @@ None <form:checkbox path="programmingLanguage" value="None "/>
 </p>
 
 
+<p class="form">Enter the desired salary:</p><form:input path="salaryDesire" />
+<br>
+<p class="form">From where you heard about us?</p><form:input path="sourceNews" />
+<br>
 <br><br>
 <input type="submit" value="Submit" />
 </form:form>

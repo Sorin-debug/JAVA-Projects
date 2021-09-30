@@ -12,11 +12,13 @@
 <body class="confirmed">
 
 <h1>Jobs Finder</h1>
-<p class="blacky">Your registration is confirmed:</p>
+<img src="${pageContext.request.contextPath}/resources/images/okAdd.png"/>
+
+<p class="blacky">Your registration is confirmed </p>
 <hr>
-First Name: ${register.firstName } 
+First Name: <b> ${register.firstName } </b>
 <br>
-Last Name: ${register.lastName }
+Last Name: <b> ${register.lastName } </b> 
 <br>
 Email Address: ${register.emailAddress }
 <br>
@@ -36,6 +38,14 @@ Time percentage of travel: ${register.timeTravel }
 <li> ${temp} </li>
 </c:forEach>
 </ul>
+<br>
+Salary wanted: ${register.salaryDesire }
+<br>
+Source information: ${register.sourceNews }
+<br>
+
+
+
 <br><br>
 <h5>Jobs Finder @2021</h5>
 

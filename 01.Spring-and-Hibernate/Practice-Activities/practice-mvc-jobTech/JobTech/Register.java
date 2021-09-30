@@ -41,6 +41,10 @@ public class Register {
 	private String[] programmingLanguage;
 	
 	private String timeTravel;
+	
+	private int salaryDesire;
+	
+	private String sourceNews;
 			
 	// create the getter/setter
 	
@@ -107,6 +111,18 @@ public class Register {
 	}
 	public void setProgrammingLanguage(String[] programmingLanguage) {
 		this.programmingLanguage = programmingLanguage;
+	}
+	public int getSalaryDesire() {
+		return salaryDesire;
+	}
+	public void setSalaryDesire(int salaryDesire) {
+		this.salaryDesire = salaryDesire;
+	}
+	public String getSourceNews() {
+		return sourceNews;
+	}
+	public void setSourceNews(String sourceNews) {
+		this.sourceNews = sourceNews;
 	}
 
 	

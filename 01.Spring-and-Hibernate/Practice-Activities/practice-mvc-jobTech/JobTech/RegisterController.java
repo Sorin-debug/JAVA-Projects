@@ -1,7 +1,10 @@
 package com.JobTech;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
@@ -26,12 +29,21 @@ public class RegisterController {
 	
 	
 	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("register") Register theRegister) {
+	public String processForm( @Valid @ModelAttribute("register") Register theRegister, BindingResult theBindingResult) {
 		
 		// log the input data
 		System.out.println("Register new: " + theRegister.getFirstName() 
 						+ " " + theRegister.getLastName());
-		return "register-confirmation";
+		
+		if(theBindingResult.hasErrors()) {
+			
+			return "register-form";
+		}else {
+			return "register-confirmation";
+		}
+		
+		
+		
 	}
 	
 	
