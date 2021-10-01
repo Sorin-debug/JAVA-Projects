@@ -22,7 +22,15 @@
 <br><br>
 
 <input type="button" onclick="doSomeWork()" value="Click Me"/>
+<br>
+<br>
 
+<input type="button" onclick="SayHello()" value="Say Hello"/>
+<br>
+<br>
+<script>SayHello();</script>
+ 
+ 
 </body>
 
 </html>
